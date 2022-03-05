@@ -19,6 +19,7 @@ export default function App() {
             <a
               href="https://github.com/AnniK93/dictionary-project"
               target="_blank"
+              rel="noreferrer"
             >
               Open source code
             </a>{" "}
