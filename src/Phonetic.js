@@ -1,5 +1,4 @@
 import React from "react";
-import headphones from "./headphones.svg";
 import volume from "./volume.svg";
 import silent from "./silent.svg";
 import "./Phonetic.css";
