@@ -10,7 +10,7 @@ export default function Phonetic(props) {
       <div className="Phonetic">
         <span>
           <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-            <img src={volume} className="listen-icon" />
+            <img src={volume} className="listen-icon" alt="volume icon" />
           </a>
         </span>
         <span>{props.phonetic.text}</span>
@@ -20,7 +20,7 @@ export default function Phonetic(props) {
     return (
       <div className="Phonetic">
         <span>
-          <img src={silent} className="silent-icon" />
+          <img src={silent} className="silent-icon" alt="silent icon" />
         </span>
         <span>{props.phonetic.text}</span>
       </div>
