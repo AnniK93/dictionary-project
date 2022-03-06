@@ -10,3 +10,16 @@
   margin: 20px 0px;
   font-size: 20px;
 }
+
+.search-button {
+  padding: 10px;
+  margin: 20px 0px 20px 5px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  font-size: 20px;
+  transition: 100ms all ease-in-out;
+}
+
+.search-button:hover {
+  background: #c5d6d9;
+}
