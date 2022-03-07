@@ -5,9 +5,9 @@ import "./TranslationResults.css";
 export default function TranslationResults(props) {
   let [translationResponse, setTranslationResponse] = useState(null);
 
-  let languageCode = props.value;
+  let languageCode = props.value.languageCode;
+  let languageIcon = props.value.languageIcon;
   let translationKeyword = props.translationKeyword;
-  console.log(props.translationKeyword);
 
   function handleTranslationResponse(response) {
     setTranslationResponse(response.data.exact_matches[0].translations[0].text);
@@ -22,7 +22,10 @@ export default function TranslationResults(props) {
 
   return (
     <div className="TranslationResults">
-      <h6>{translationResponse}</h6>
+      <h6>
+        {languageIcon} {""}
+        {translationResponse}
+      </h6>
     </div>
   );
 }
