@@ -1,6 +1,7 @@
 import React from "react";
 import Phonetic from "./Phonetic";
 import Meaning from "./Meaning";
+import Translation from "./Translation";
 
 export default function Results(props) {
   if (props.results) {
@@ -21,6 +22,7 @@ export default function Results(props) {
             </div>
           );
         })}
+        <Translation keyword={props.results.word} />
       </div>
     );
   } else {
