@@ -3,6 +3,7 @@ import axios from "axios";
 import "./TranslationResults.css";
 
 export default function TranslationResults(props) {
+  console.log(props);
   let [translationResponse, setTranslationResponse] = useState(null);
 
   let languageCode = props.value.languageCode;
@@ -20,12 +21,16 @@ export default function TranslationResults(props) {
   }
   searchTranslation();
 
-  return (
-    <div className="TranslationResults">
-      <h6>
-        {languageIcon} {""}
-        {translationResponse}
-      </h6>
-    </div>
-  );
+  if (translationResponse) {
+    return (
+      <div className="TranslationResults">
+        <h6>
+          {languageIcon} {""}
+          {translationResponse}
+        </h6>
+      </div>
+    );
+  } else {
+    return null;
+  }
 }

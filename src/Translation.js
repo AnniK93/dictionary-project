@@ -37,14 +37,6 @@ export default function Translation(props) {
       languageIcon: "🇷🇺",
       languageCode: "ru",
     },
-    {
-      languageIcon: "🇯🇵",
-      languageCode: "ja",
-    },
-    {
-      languageIcon: "🇨🇳",
-      languageCode: "zh",
-    },
   ];
 
   let translationKeyword = props.keyword;
