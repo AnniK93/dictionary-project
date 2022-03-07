@@ -1,7 +1,6 @@
 .Dictionary {
-  padding: 40px;
+  padding: 20px;
 }
-
 .search-input {
   border-radius: 6px;
   border: 1px solid grey;
@@ -17,9 +16,31 @@
   border: 1px solid grey;
   border-radius: 6px;
   font-size: 20px;
-  transition: 100ms all ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .search-button:hover {
   background: #c5d6d9;
+}
+
+.Dictionary h2 {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .Dictionary {
+    padding: 0px;
+  }
+  .search-button,
+  .search-input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .Dictionary h2 {
+    text-align: center;
+  }
+  .Results h2 {
+    text-align: left;
+  }
 }
