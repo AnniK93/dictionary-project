@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-//import axios from "axios";
+import React from "react";
+
 import TranslationResults from "./TranslationResults";
 
 export default function Translation(props) {
