@@ -9,6 +9,10 @@ export default function Translation(props) {
       languageCode: "de",
     },
     {
+      languageIcon: "🇳🇱",
+      languageCode: "nl",
+    },
+    {
       languageIcon: "🇫🇷",
       languageCode: "fr",
     },
@@ -21,8 +25,25 @@ export default function Translation(props) {
       languageCode: "es",
     },
     {
+      languageIcon: "🇵🇹",
+      languageCode: "pt",
+    },
+
+    {
       languageIcon: "🇵🇱",
       languageCode: "pl",
+    },
+    {
+      languageIcon: "🇷🇺",
+      languageCode: "ru",
+    },
+    {
+      languageIcon: "🇯🇵",
+      languageCode: "ja",
+    },
+    {
+      languageIcon: "🇨🇳",
+      languageCode: "zh",
     },
   ];
 
