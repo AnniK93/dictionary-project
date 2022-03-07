@@ -17,6 +17,7 @@
   border-radius: 6px;
   font-size: 20px;
   transition: all 150ms ease-in-out;
+  background: #efefef;
 }
 
 .search-button:hover {
