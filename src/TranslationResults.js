@@ -3,7 +3,7 @@ import axios from "axios";
 import "./TranslationResults.css";
 
 export default function TranslationResults(props) {
-  console.log(props);
+  // console.log(props);
   let [translationResponse, setTranslationResponse] = useState(null);
 
   let languageCode = props.value.languageCode;

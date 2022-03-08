@@ -4,7 +4,7 @@ import silent from "./silent.svg";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
-  console.log(props);
+  //console.log(props);
   if (props.phonetic.audio && props.phonetic.text) {
     return (
       <div className="Phonetic">
