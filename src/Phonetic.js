@@ -1,27 +1,25 @@
 import React from "react";
-import volume from "./volume.svg";
-import silent from "./silent.svg";
+
+import ReactAudioPlayer from "react-audio-player";
 import "./Phonetic.css";
 
 export default function Phonetic(props) {
-  //console.log(props);
   if (props.phonetic.audio && props.phonetic.text) {
     return (
       <div className="Phonetic">
-        <span>
-          <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-            <img src={volume} className="listen-icon" alt="volume icon" />
-          </a>
-        </span>
         <span>{props.phonetic.text}</span>
+        <span>
+          <ReactAudioPlayer
+            src={props.phonetic.audio}
+            className="audioPlayer"
+            controls
+          />
+        </span>
       </div>
     );
   } else if (props.phonetic.audio === "") {
     return (
       <div className="Phonetic">
-        <span>
-          <img src={silent} className="silent-icon" alt="silent icon" />
-        </span>
         <span>{props.phonetic.text}</span>
       </div>
     );

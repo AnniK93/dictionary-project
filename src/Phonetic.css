@@ -7,3 +7,10 @@
   width: 8px;
   margin-right: 5px;
 }
+
+.audioPlayer {
+  max-height: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+}
