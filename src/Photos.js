@@ -2,8 +2,6 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  //console.log(props.photos);
-
   if (props.photos) {
     return (
       <div className="Photos">
@@ -17,6 +15,7 @@ export default function Photos(props) {
                     <img
                       src={photo.src.tiny}
                       className="img-fluid"
+                      alt=""
                       title={copyright}
                     />
                   </a>
