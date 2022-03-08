@@ -1,16 +1,8 @@
-.listen-icon {
-  width: 18px;
-  margin-right: 5px;
-}
-
-.silent-icon {
-  width: 8px;
-  margin-right: 5px;
+.Phonetic {
+  margin-top: 5px;
 }
 
 .audioPlayer {
   max-height: 20px;
   margin-left: 10px;
-  position: relative;
-  top: 5px;
 }
