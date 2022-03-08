@@ -1,7 +1,7 @@
 import React from "react";
 import Phonetic from "./Phonetic";
 import Meaning from "./Meaning";
-import Translation from "./Translation";
+
 import "./Results.css";
 
 export default function Results(props) {
@@ -24,9 +24,6 @@ export default function Results(props) {
               </div>
             );
           })}
-        </section>
-        <section>
-          <Translation keyword={props.results.word} />
         </section>
       </div>
     );
